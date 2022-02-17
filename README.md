@@ -6,9 +6,8 @@ Book App is an android application that help to manage books. Users can create a
 * FireBase
 
 ## How to Deploy Project
-
-### To install npm modules:
-### use `npm install`
+ 
+### use `npm install` To install npm modules:
 
 ### Run emulator(Use Android studio):
 
