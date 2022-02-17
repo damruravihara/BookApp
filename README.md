@@ -7,11 +7,12 @@ Book App is an android application that help to manage books. Users can create a
 
 ## How to Deploy Project
  
-### use `npm install` To install npm modules:
+### 1) Use `npm install` to install npm modules.
 
-### Run emulator(Use Android studio):
+### 2) Run android emulator(Use Android studio).
 
-### To Start App:
-### use `npm start`
-### use `npm run android`
+### 3) Use `npm start` to start the server.
+
+### 4) After that use `npm run android` in a different CLI to start the App.
+
 
