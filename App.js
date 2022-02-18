@@ -17,13 +17,14 @@ import AllGoals from './App/Activities/AllGoals'
 import AllBooks from './App/Activities/AllBooks'
 import BookDetail from './App/Activities/BookDetail'
 import RegisterActivity from './App/Activities/RegisterActivity'
+import UpdateBooks from './App/Activities/UpdateBooks'
 
 const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name='Login' component={LoginActivity} />
+        <Stack.Screen name='Login' options={{ title: 'Welcome' }} component={LoginActivity} />
         <Stack.Screen name='Register' component={RegisterActivity} />
         <Stack.Screen name='Home' component={HomeAcvtivity} />
         <Stack.Screen name='Goal' component={CreateGoalActivity} />
@@ -31,6 +32,7 @@ const App = () => {
         <Stack.Screen name='AllGoals' component={AllGoals} />
         <Stack.Screen name='AllBooks' component={AllBooks} />
         <Stack.Screen name='BookDetail' component={BookDetail} />
+        <Stack.Screen name='UpdateBooks' options={{ title: 'Update Book' }} component={UpdateBooks}/>
       </Stack.Navigator>
     </NavigationContainer>
     // <LoginActivity/>

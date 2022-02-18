@@ -64,8 +64,14 @@ export default function BookDetail({route,navigation}){
       <Text style={styles.goalBookText}>Finished Read: </Text><Text style={styles.goalText}>{DueDate}</Text>
       <View style={{borderBottomColor: 'black',borderBottomWidth: 1,}}/>
       </View>
+      
       <View style={styles.buttonWrapper}>
-      <Button title='DELETE' color="#ff1744" onPress={twoOptionsAlertFunction}/>
+        <View style={styles.deleteButtonWrapper}>
+        <Button title='DELETE' color="#ff1744" onPress={twoOptionsAlertFunction}/>
+        </View>
+        <View style={styles.deleteButtonWrapper}>
+      <Button title='UPDATE' color="#52b202" onPress={()=> navigation.replace('UpdateBooks', {name:{Title}})}/>
+      </View>
       </View>
       </View>
       </ScrollView>
@@ -118,11 +124,14 @@ const styles = StyleSheet.create({
         marginRight:10,
       },
       buttonWrapper:{
-        borderRadius:17,
+        justifyContent:'space-around',
+        flexDirection:'row'
+      },
+      deleteButtonWrapper:{
         marginTop:20,
-        marginLeft:15,
-        marginRight:15,
-        marginBottom:20
+        marginLeft:10,
+        marginRight:10,
+        marginBottom:20,
       },
       goalText:{
         marginLeft:8,
